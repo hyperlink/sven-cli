@@ -1,0 +1,29 @@
+{
+  "name": "sven",
+  "version": "0.1.0",
+  "description": "Sven is a SVN command line with sugar added",
+  "main": "index.js",
+  "bin" : "./cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SVN", "Subversion"
+  ],
+  "author": "Xiaoxin Lu <javascript@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "svn-interface": "^0.4.2",
+    "inquirer": "^0.4.1",
+    "moment": "^2.5.1",
+    "when": "^2.8.0",
+    "colors": "^0.6.2",
+    "commander": "^2.1.0",
+    "cli-table": "^0.3.0",
+    "humanize-plus": "^1.4.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.5.5",
+    "gulp-jsvalidate": "^0.1.1"
+  }
+}
