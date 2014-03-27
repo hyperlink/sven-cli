@@ -2,7 +2,7 @@
 
 **TLDR; SVN command line with delicious sugar on top.**
 
-
+![](https://dl.dropboxusercontent.com/u/4721128/screenshots/sven_create_and_switch.gif)
 
 ## Features
 
@@ -13,10 +13,46 @@
 * Easily delete your personal branches in bulk
 * Non-Sven commands are passed through to SVN so you can use SVEN like SVN
 
+## Prerequisites
+
+1. Node.Js is installed and in your path
+2. SVN command line is installed and in your path
+
 ## Installation
 
-1. Install Node.js
-2. `npm install sven -g`
-3. type `sven` in the command line
+	npm install sven -g
+	
+## Setup
+
+Sven is vastly more useful when it's aware of your projects. To set this up you will need to provide sven with project name path to your trunk and branches. You can do this through `sven config` subcommand.
+
+To add a new project XYZ:
+
+* `sven config -a XYZ`
+* Follow the prompts
+
+	  Usage: config [options]
+
+	  Options:
+
+	    -h, --help              output usage information
+	    -a, --add <project>     Add project <project>
+	    -r, --remove <project>  Remove project <project>
+
+
+### Manually
+
+You can manually set this up by adding `.sven.json` file to your home directory with the following format
+
+	{
+		"XYZ": {
+			"trunk": "https://myrepo/svn/XYZ/community/carma",
+			"branch": "https://myrepo/svn/XYZ/developers/xiaoxin/"
+		},
+		"abc": {
+			"trunk": "https://myrepo/svn/abc/community/web",
+			"branch": "https://myrepo/svn/abc/developers/xiaoxin/"
+		}
+	}
 
 ## License MIT
