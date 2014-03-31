@@ -4,6 +4,8 @@
 
 ![](https://dl.dropboxusercontent.com/u/4721128/screenshots/sven_create_and_switch.gif)
 
+[![NPM](https://nodei.co/npm/sven.png)](https://nodei.co/npm/sven/)
+
 ## Features
 
 * Aware of your projects and allows you to quickly switch between your personal branches
