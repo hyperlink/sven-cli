@@ -12,8 +12,14 @@ var viewHistory    = require('./lib/viewHistory')
 var passthrough    = require('./lib/passthrough')
 var deleteBranches = require('./lib/deleteBranches')
 var config         = require('./lib/config')
+var updateNotifier = require('update-notifier')
 
 var utils = require('./lib/utils')
+
+var notifier = updateNotifier()
+if (notifier.update) {
+    notifier.notify()
+}
 
 program
 	.version(pjson.version)
@@ -70,7 +76,7 @@ program.on('--help', function(){
 	console.log('    $ sven modified --help')
 	console.log('    $ sven config -h')
 	console.log('')
-});
+})
 
 program.parse(process.argv)
 
