@@ -45,6 +45,7 @@ program
 
 program
 	.command('log [file]')
+	.option('-l, --limit <max>', 'maximum number of log entries')
 	.description('View log entires (up until copy) for current working copy')
 	.action(viewLog)
 
