@@ -20,7 +20,7 @@
   "author": "Xiaoxin Lu <javascript@yahoo.com>",
   "license": "MIT",
   "dependencies": {
-    "svn-interface": "^0.4.2",
+    "svn-interface": "^0.4.4",
     "inquirer": "^0.4.1",
     "moment": "^2.5.1",
     "when": "^2.8.0",
