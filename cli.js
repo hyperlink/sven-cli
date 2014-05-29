@@ -13,6 +13,7 @@ var passthrough    = require('./lib/passthrough')
 var deleteBranches = require('./lib/deleteBranches')
 var config         = require('./lib/config')
 var updateNotifier = require('update-notifier')
+var blame          = require('./lib/blame')
 
 var utils = require('./lib/utils')
 
@@ -48,6 +49,11 @@ program
 	.option('-l, --limit <max>', 'maximum number of log entries')
 	.description('View log entires (up until copy) for current working copy')
 	.action(viewLog)
+
+program
+	.command('blame <file>')
+	.description('svn blame (with line numbers) for given file')
+	.action(blame)
 
 program
 	.command('history')
