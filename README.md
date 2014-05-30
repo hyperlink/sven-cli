@@ -13,6 +13,7 @@
 * Shows log (in branch) in a pretty table format
 * Create new branches with an option to switch to that branch automatically
 * Easily delete your personal branches in bulk
+* svn blame with line numbers
 * Non-Sven commands are passed through to SVN so you can use SVEN like SVN
 
 ## Prerequisites
