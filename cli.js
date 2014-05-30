@@ -17,7 +17,11 @@ var blame          = require('./lib/blame')
 
 var utils = require('./lib/utils')
 
-var notifier = updateNotifier()
+var notifier = updateNotifier({
+	packageName    : pjson.name,
+	packageVersion : pjson.version
+})
+
 if (notifier.update) {
     notifier.notify()
 }
