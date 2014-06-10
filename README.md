@@ -15,6 +15,7 @@
 * Easily delete your personal branches in bulk
 * svn blame with line numbers
 * Non-Sven commands are passed through to SVN so you can use SVEN like SVN
+* Supports commit integration with [bug/issue trackers](http://tortoisesvn.net/docs/release/TortoiseSVN_en/tsvn-dug-bugtracker.html) when used in conjunction with `sven modified -c`
 
 ## Prerequisites
 
