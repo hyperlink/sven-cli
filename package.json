@@ -1,6 +1,6 @@
 {
   "name": "sven",
-  "version": "0.2.1",
+  "version": "0.2.3",
   "description": "Sven is a SVN command line with sugar added",
   "main": "index.js",
   "bin": "./cli.js",

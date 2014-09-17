@@ -66,6 +66,7 @@ program
 
 program
 	.command('merge')
+	.option('-i, --ignore-ancestry', 'disable merge tracking; diff nodes as if related')
 	.description('Merge current working copy with another branch')
 	.action(merge)
 
